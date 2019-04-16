@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "Nano shortcuts",
-    "version": "0.1",
+    "name": "Name My Vote",
+    "version": "0.2",
     "description": "A simple firefox extension that automatically fills in your minecraft username on the popular minecraft server lists wiht a vote function. You won't never miss your reward for voting!",
-    "homepage_url": "https://github.com/frommMoritz/nano-shortcuts/",
+    "homepage_url": "https://github.com/frommMoritz/name-my-vote/",
     "content_scripts": [
         {
             "matches": ["https://*.minecraft-serverlist.net/vote/*"],
@@ -19,5 +19,15 @@
         "128": "icons/icon-128.png",
         "256": "icons/icon-256.png",
         "512": "icons/icon-512.png"
-    }
+    },
+    "options_ui": {
+        "page": "options/options.html",
+        "browser_style": true
+    },
+    "permissions": ["storage"],
+    "applications": {
+        "gecko": {
+            "id": "name-my-vote@moritz-fromm.de"
+        }
+    }    
 }
