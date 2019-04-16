@@ -12,6 +12,10 @@
         {
             "matches": ["https://minecraft-server.eu/vote/*"],
             "js": ["src/minecraft-server.eu.js"]
+        },
+        {
+            "matches": ["*://vote.kadcon.de/*"],
+            "js": ["src/vote.kadcon.de.js"]
         }
     ],
     "icons": {
