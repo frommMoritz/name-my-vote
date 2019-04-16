@@ -8,7 +8,7 @@ function saveOptions(e) {
   function restoreOptions() {
   
     function setCurrentChoice(result) {
-      document.querySelector("#username").value = result.username || "blue";
+      document.querySelector("#username").value = result.username || "Dinnerbone";
     }
   
     function onError(error) {
