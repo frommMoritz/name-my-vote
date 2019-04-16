@@ -2,6 +2,7 @@
 archivePath=build/
 
 branch=$(git rev-parse --abbrev-ref HEAD)
+lastHash=$(git rev-parse --short HEAD)
 manifest=$(cat manifest.json)
 name=$( echo $manifest | jq .name )
 version=$( echo $manifest | jq .version )
@@ -14,7 +15,7 @@ archiveName="$( echo $manifest | jq -r .name | tr '[:upper:]' '[:lower:]' | tr '
 
 if [ $branch != 'master' ]
 then
-archiveName="$archiveName-$branch"
+archiveName="$archiveName-$lastHash-$branch"
 fi
 
 archiveName="$archiveName.zip"
