@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Name My Vote",
-    "version": "1.0",
+    "name": "Name my vote",
+    "version": "1.1",
     "description": "A simple firefox extension that automatically fills in your minecraft username on the popular minecraft server lists wiht a vote function. You won't never miss your reward for voting!",
     "homepage_url": "https://github.com/frommMoritz/name-my-vote/",
     "content_scripts": [
@@ -12,6 +12,10 @@
         {
             "matches": ["https://minecraft-server.eu/vote/*"],
             "js": ["src/minecraft-server.eu.js"]
+        },
+        {
+            "matches": ["*://vote.kadcon.de/*"],
+            "js": ["src/vote.kadcon.de.js"]
         }
     ],
     "icons": {
