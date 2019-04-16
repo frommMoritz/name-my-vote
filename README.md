@@ -11,3 +11,9 @@ Currently supported pages:
 
 ![](media/screencap-minecraft-serverlist.net.gif)
 ![](media/screencap-minecraft-server.eu.gif)
+
+On a few selected (one at the moment) websites of minecraft Servers, it also replaces the link to `minecraft-server.net/server/` with `minecraft-server.net/vote/`. So you can skip the step of clicking on vote there. It is available on the following webpages:
+
+- [vote.kadcon.de](vote.kadcon.de)
+
+If you would like to see another voting page or anoters server vote Page on There, just [open an issue].
